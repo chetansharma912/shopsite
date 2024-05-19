@@ -1,0 +1,219 @@
+<html>
+<head>
+	<title>Web Page</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+$(function(){
+    var header = $('#head');
+    $(window).scroll(function(){
+        if($(window).scrollTop() <= 30){
+       		header.css('box-shadow', '0px 0px ' + $(window).scrollTop() + 'px rgba(0, 0, 0, 0.4)'); 
+        } else {
+          header.css('box-shadow', '0px 0px 50px rgba(0, 0, 0, 0.4)'); 
+        }
+    });  
+})
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
+	<style type="text/css">
+		h1{
+			font-family: Rage;
+			color: #ab4242;
+			font-size: 30px;
+		}
+		h2{
+			font-family: Mistral;
+			color: #8e0000;
+			font-size: 60px;
+		}
+		#head{
+			background-color:#f8f9fa;
+		}
+		a{
+			color: #af4949;
+		}
+		li a{  
+			font-family: Mistral;
+			font-size: 25px;
+			color: black;
+			border-bottom-style: solid;
+			border-bottom-width: 4px;
+			border-bottom-color: #f8f9fa;
+
+		}
+		h1 a{
+			letter-spacing: 2px;
+		}
+		h1 a:hover{
+			text-decoration: none;
+			color: #004085;
+			transition: left .0s ease-out,color .5s ease-in;
+		}
+		li a:hover{
+			color: black;
+			border-bottom-style: solid;
+			border-bottom-width: 4px;
+			border-bottom-color: #af4949;
+    		transition: right .0s ease-in,border-color 1s ease-out;
+		}
+		.container p{
+			color: black;
+			font-family: monospace;
+		}
+		a span{
+			color: black;
+		}
+		.jumbotron{
+			box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+		}
+		.col-md-3 p{
+			font-size: 15px;
+		}
+		#page-title{
+			font-family: Rage;
+			font-size: 50px;
+			color: #824545;
+			background-color:#fff5f5;
+		}
+		#shoplink{
+			color: black;
+		}
+		#footer{
+			background-color: #f8f9fa;
+		}
+	</style>
+</head>
+<body style="height:1500px">
+
+
+
+
+	<!-- HEADER -->
+	<div class="container-fluid sticky-top" id="head">
+		<div class="container">
+			<p class="text-right">
+          		INDIA'S LARGEST SHOPPING WEBSITE
+          		<a href="#"><span class="badge badge-pill badge-success">Contact</span></a>
+          		<a href="#"><span class="badge badge-pill badge-danger">About</span></a>
+          		<a href="#"><span class="badge badge-pill badge-secondary">Customer Care</span></a>
+          	</p>
+          	<header><h1><a href="index.html">Shopping Here</a></h1></header>
+		</div>
+		<div class="container">
+			<ul class="nav justify-content-center">
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Mens</a>
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Womens</a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Kids</a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Home&amp;Living</a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Kitchen</a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Accessories</a>
+    			</li>
+  			</ul>
+		</div>
+	</div>
+
+
+
+	<!--BODY CONTENT-->
+	<div class="container-fluid" style="background-color:#ffe8e8;">
+		<br><br> 
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 text-center">
+
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div class="container-fluid" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<br>
+					<strong class="badge badge-pill badge-secondary">
+						Shopping
+					</strong><br>
+					<p class="text-dark" style="font-size:15px;">
+					<strong>
+					<br>
+					<a href="#" id="shoplink">Mens</a><br>
+					<a href="#" id="shoplink">Womens</a><br>
+					<a href="#" id="shoplink">Kids</a><br>
+					<a href="#" id="shoplink">Home &amp; Living</a><br>
+					<a href="#" id="shoplink">Kitchen</a><br>
+					<a href="#" id="shoplink">Accessories</a><br>
+					<a href="#" id="shoplink">Gift Card <span class="badge badge-pill badge-danger">new</span></a><br>
+				</strong>
+					</p>
+				</div>
+				<div class="col-md-2">
+					<br>
+					<strong class="badge badge-pill badge-secondary">
+						Useful Links
+					</strong><br><br>
+					<p class="text-dark" style="font-size:15px;">
+					<strong>
+					<a href="#" id="shoplink">Contact Us</a><br>
+					<a href="#" id="shoplink">T&amp;C</a><br>
+					<a href="#" id="shoplink">FAQ</a><br>
+					<a href="#" id="shoplink">Shipping</a><br>
+					<a href="#" id="shoplink">Cancellation</a><br>
+					<a href="#" id="shoplink">Track Orders</a><br>
+					<a href="#" id="shoplink">Customer Care</a><br>
+					<a href="#" id="shoplink">Blogs</a><br>
+					</strong>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<br>
+					<strong class="badge badge-pill badge-secondary">
+						Expeience Shopping here on Mobile App
+					</strong><br><br>
+					<a href="#"><img src="images/playstore.png" class="img-rounded img-responsive" height="50px" width="120px"></a>
+					<a href="#"><img src="images/appstore.png" class="img-rounded img-responsive" height="50px" width="120px"></a>
+					<br><br>
+					<strong class="badge badge-pill badge-secondary">Social Sites</strong><br><br>
+					<a href="#"><img src="images/fb.jpg" class="img-thumbnail img-responsive" height="50px" width="50px"></a>
+					<a href="#"><img src="images/insta.jpg" class="img-thumbnail img-responsive" height="50px" width="50px"></a>
+					<a href="#"><img src="images/youtube.jpg" class="img-thumbnail img-responsive" height="50px" width="50px"></a>
+					<a href="#"><img src="images/tweet.jpg" class="img-thumbnail img-responsive" height="50px" width="50px"></a>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<strong class="badge badge-pill badge-success">100% ORIGINAL</strong><br>
+					<p class="text-secondary ">guarantee for all products at Shopping Here.com</p>
+					<strong class="badge badge-pill badge-danger">Return</strong><br>
+					<p class="text-secondary">within 30days of placing your order</p>
+					<strong class="badge badge-pill badge-info">Get free</strong><br>
+					<p class="text-secondary">delivery for every order above Rs.49/-</p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+</body> 
+</html>

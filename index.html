@@ -1,0 +1,368 @@
+<html>
+<head>
+	<title>Web Page</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    var header = $('#head');
+    $(window).scroll(function(){
+        if($(window).scrollTop() <= 30){
+       		header.css('box-shadow', '0px 0px ' + $(window).scrollTop() + 'px rgba(0, 0, 0, 0.4)'); 
+        } else {
+          header.css('box-shadow', '0px 0px 50px rgba(0, 0, 0, 0.4)'); 
+        }
+    });  
+})
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
+	<style type="text/css">
+		h1{
+			font-family: Rage;
+			color: #ab4242;
+			font-size: 60px;
+		}
+		#head{
+			background-color:#f8f9fa;
+		}
+		a{
+			color: #af4949;
+		}
+		li a{  
+			font-family: Mistral;
+			font-size: 25px;
+			color: black;
+			border-bottom-style: solid;
+			border-bottom-width: 4px;
+			border-bottom-color: #f8f9fa;
+
+		}
+		h1 a{
+			letter-spacing: 5px;
+		}
+		h1 a:hover{
+			text-decoration: none;
+			color: #004085;
+			transition: left .0s ease-out,color .5s ease-in;
+		}
+		li a:hover{
+			color: black;
+			border-bottom-style: solid;
+			border-bottom-width: 4px;
+			border-bottom-color: #af4949;
+    		transition: right .0s ease-in,border-color 1s ease-out;
+		}
+		.container p{
+			color: black;
+			font-family: monospace;
+		}
+		a span{
+			color: black;
+		}
+		#image{
+			transition: opacity 0.8s;
+		}
+		#image:hover{
+			opacity: 0.5;
+		}
+		.col-md-3 p{
+			font-size: 15px;
+		}
+		.col-md-3 a img{
+			border: 1px solid #a8a8a8;
+		}
+		h5{
+			font-family: rage;
+			font-size: 30px;
+			color: #af4949;
+		}
+		#shoplink{
+			color: black;
+		}
+		#footer{
+			background-color: #f8f9fa;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- HEADER -->
+	<div class="container-fluid sticky-top" id="head">
+		<div class="container">
+			<p class="text-right">
+          		INDIA'S LARGEST SHOPPING WEBSITE
+          		<a href="#"><span class="badge badge-pill badge-info">Register</span></a>
+          		<a href="#"><span class="badge badge-pill badge-success">Contact</span></a>
+          		<a href="#"><span class="badge badge-pill badge-danger">About</span></a>
+          		<a href="#"><span class="badge badge-pill badge-secondary">Customer Care</span></a>
+          	</p>
+			<header><h1><a href="index.html">Shopping Here</a></h1></header>
+		</div>
+		<div class="container">
+			<ul class="nav justify-content-center">
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Mens</a>
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Womens</a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Kids</a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Home&amp;Living</a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Kitchen</a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link" href="#">Accessories</a>
+    			</li>
+    			<li class="nav-item float-sm-right">
+    				<a class="nav-link" href="signin.html">Sign In/Join</a>
+    			</li>
+  			</ul>
+		</div>
+	</div>
+
+	<!-- SLIDER -->
+	<div class="container">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+ 			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+   				<li data-target="#demo" data-slide-to="1"></li>
+    			<li data-target="#demo" data-slide-to="2"></li>
+  			</ul>
+  			<!-- The slideshow -->
+  			<div class="carousel-inner">
+    			<div class="carousel-item active">
+      				<img src="images/img1.jpg" alt="headerback" width="1100" height="500">
+      				<div class="carousel-caption">
+        				<h2 style="color:white;font-family: Rage;font-size:60px;">Shop Here Now</h2>
+        				<p style="color:white;font-size:20px;">UPTO 50-75% DISCOUNT ON ALL PRODUCTS</p>
+      				</div>
+    			</div>
+    			<div class="carousel-item">
+      				<img src="images/b.jpg" alt="b" width="1100" height="500">
+      				<div class="carousel-caption">
+        				<h2 style="color:white;font-family: Rage;font-size:60px;">This Is Just Demo</h2>
+        				<p style="color:white;font-size:20px;">FLAT 10% DISCOUNT</p>
+      				</div>
+    			</div>
+    			<div class="carousel-item">
+      				<img src="images/img3.jpg" alt="head" width="1100" height="500">
+      				<div class="carousel-caption">
+        				<h2 style="color:black;font-family: Rage;font-size:60px;">On All Accessories</h2>
+        				<p style="color:black;font-size:20px;">UPTO 20% DISCOUNT ON EVERY PRODUCT</p>
+      				</div>
+    			</div>
+  			</div>
+  			<!-- Left and right controls -->
+  			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    			<span class="carousel-control-prev-icon"></span>
+  			</a>
+  			<a class="carousel-control-next" href="#demo" data-slide="next">
+    			<span class="carousel-control-next-icon"></span>
+  			</a>
+		</div>
+	</div>
+	<br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 text-center">
+				<a href="#">
+					<img src="images/l1.jpg" id="image" class="img-responsive" width="150px" height="150px">
+				</a>
+			</div>
+			<div class="col-md-3 text-center">
+				<a href="#">
+					<img src="images/l2.jpg" id="image" class="img-responsive" width="150px" height="150px">
+				</a>
+			</div>
+			<div class="col-md-3 text-center">
+				<a href="#">
+					<img src="images/l3.jpg" id="image" class="img-responsive" width="150px" height="150px">
+				</a>
+			</div>
+			<div class="col-md-3 text-center">
+				<a href="#">
+					<img src="images/l4.jpg" id="image" class="img-responsive" width="150px" height="150px">
+				</a>
+			</div>
+			<div class="col-md-3 text-center">
+				<h5>Formals</h5>
+				<p>UPTO  &#8377;1000<br>
+				Shop Now</p>
+			</div>
+			<div class="col-md-3 text-center">
+				<h5>Ladies Special</h5>
+				<p>FLAT 20% OFF<br>
+				Shop Now</p>
+			</div>
+			<div class="col-md-3 text-center">
+				<h5>Jeans Shirts</h5>
+				<p>SHOP BELOW &#8377;5000<br>
+				Shop Now</p>
+			</div>
+			<div class="col-md-3 text-center">
+				<h5>On All Products</h5>
+				<p>UPTO 50% OFF<br>
+				Shop Now</p>
+			</div>
+		</div>
+	</div>
+	<br><br>
+
+	<div class="container">
+		<h5><kbd>HANDPICKED</kbd></h5>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+    				<a href="#"><img class="card-img-top" src="images/h1.jpg" alt="Card image" height="200px" id="image"></a>
+    				<div class="card-body">
+      					<h5 class="card-title text-center">Casual Ware For Mens</h5>
+      					<p class="card-text">Some</p>
+    				</div>
+  				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+    				<a href="#"><img class="card-img-top" src="images/h2.jpg" alt="Card image" height="200px" id="image"></a>
+    				<div class="card-body">
+      					<h5 class="card-title text-center">Branded Casuals For Mens</h5>
+      					<p class="card-text">some</p>
+    				</div>
+  				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+    				<a href="#"><img class="card-img-top" src="images/img2.jpg" alt="Card image" height="200px" id="image"></a>
+    				<div class="card-body">
+      					<h5 class="card-title text-center">Titledfvd</h5>
+      					<p class="card-text">Some</p>
+    				</div>
+  				</div>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<div class="container">
+		<h5><kbd>SHOES</kbd></h5>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+    				<a href="#"><img class="card-img-top" src="images/s1.jpg" alt="Card image" height="200px" id="image"></a>
+    				<div class="card-body">
+      					<h5 class="card-title text-center">For Mens &amp; Womens Both</h5>
+      					<p class="card-text">Some</p>
+    				</div>
+  				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+    				<a href="#"><img class="card-img-top" src="images/s2.jpg" alt="Card image" height="200px" id="image"></a>
+    				<div class="card-body">
+      					<h5 class="card-title text-center">Only For Mens Shoes</h5>
+      					<p class="card-text">some</p>
+    				</div>
+  				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+    				<a href="#"><img class="card-img-top" src="images/s3.jpg" alt="Card image" height="200px" id="image"></a>
+    				<div class="card-body">
+      					<h5 class="card-title text-center">Only For Womens Shoes</h5>
+      					<p class="card-text">Some</p>
+    				</div>
+  				</div>
+			</div>
+		</div>
+	</div>
+	<br><br>
+
+	<!-- FOOTER -->
+	<div class="container-fluid" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<br>
+					<strong class="badge badge-pill badge-secondary">
+						Shopping
+					</strong><br>
+					<p class="text-dark" style="font-size:15px;">
+					<strong>
+					<br>
+					<a href="#" id="shoplink">Mens</a><br>
+					<a href="#" id="shoplink">Womens</a><br>
+					<a href="#" id="shoplink">Kids</a><br>
+					<a href="#" id="shoplink">Home &amp; Living</a><br>
+					<a href="#" id="shoplink">Kitchen</a><br>
+					<a href="#" id="shoplink">Accessories</a><br>
+					<a href="#" id="shoplink">Gift Card <span class="badge badge-pill badge-danger">new</span></a><br>
+				</strong>
+					</p>
+				</div>
+				<div class="col-md-2">
+					<br>
+					<strong class="badge badge-pill badge-secondary">
+						Useful Links
+					</strong><br><br>
+					<p class="text-dark" style="font-size:15px;">
+					<strong>
+					<a href="#" id="shoplink">Contact Us</a><br>
+					<a href="#" id="shoplink">T&amp;C</a><br>
+					<a href="#" id="shoplink">FAQ</a><br>
+					<a href="#" id="shoplink">Shipping</a><br>
+					<a href="#" id="shoplink">Cancellation</a><br>
+					<a href="#" id="shoplink">Track Orders</a><br>
+					<a href="#" id="shoplink">Return</a><br>
+					<a href="#" id="shoplink">Blogs</a><br>
+					</strong>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<br>
+					<strong class="badge badge-pill badge-secondary">
+						Expeience Shopping here on Mobile App
+					</strong><br><br>
+					<a href="#"><img src="images/playstore.png" class="img-rounded img-responsive" height="50px" width="120px"></a>
+					<a href="#"><img src="images/appstore.png" class="img-rounded img-responsive" height="50px" width="120px"></a>
+					<br><br>
+					<strong class="badge badge-pill badge-secondary">Social Sites</strong><br><br>
+					<a href="#"><img src="images/fb.jpg" class="img-thumbnail img-responsive" height="50px" width="50px"></a>
+					<a href="#"><img src="images/insta.jpg" class="img-thumbnail img-responsive" height="50px" width="50px"></a>
+					<a href="#"><img src="images/youtube.jpg" class="img-thumbnail img-responsive" height="50px" width="50px"></a>
+					<a href="#"><img src="images/tweet.jpg" class="img-thumbnail img-responsive" height="50px" width="50px"></a>
+				</div>
+				<div class="col-md-3">
+					<br>
+					<strong class="badge badge-pill badge-success">100% ORIGINAL</strong><br>
+					<p class="text-secondary ">guarantee for all products at Shopping Here.com</p>
+					<strong class="badge badge-pill badge-danger">Return</strong><br>
+					<p class="text-secondary">within 30days of placing your order</p>
+					<strong class="badge badge-pill badge-info">Get free</strong><br>
+					<p class="text-secondary">delivery for every order above Rs.49/-</p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="container text-center" style="color:#898989;">&copy; 2018 www.ShoppingHere.com. All rights reserved.</div>
+	<br>
+</body> 
+</html>
