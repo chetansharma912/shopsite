@@ -28,13 +28,23 @@ $(document).ready(function(){
 });
 </script>
 	<style type="text/css">
+		@font-face {
+			font-family: myFont;
+			src: url("font/FonxT-Regular.otf") format("opentype");
+		}
+
+		@font-face {
+			font-family: myFont;
+			font-weight: bold;
+			src: url("font/FonxT-Regular.otf") format("opentype");
+		}
 		h1{
-			font-family: Rage;
+			font-family: myFont;
 			color: #ab4242;
 			font-size: 30px;
 		}
 		h2{
-			font-family: Mistral;
+			font-family: myFont;
 			color: #8e0000;
 			font-size: 60px;
 		}
@@ -45,7 +55,7 @@ $(document).ready(function(){
 			color: #af4949;
 		}
 		li a{  
-			font-family: Mistral;
+			font-family: myFont;
 			font-size: 25px;
 			color: black;
 			border-bottom-style: solid;
@@ -82,7 +92,7 @@ $(document).ready(function(){
 			font-size: 15px;
 		}
 		#page-title{
-			font-family: Rage;
+			font-family: myFont;
 			font-size: 50px;
 			color: #824545;
 			background-color:#fff5f5;

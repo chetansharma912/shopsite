@@ -29,8 +29,18 @@ $(document).ready(function(){
 });
 </script>
 	<style type="text/css">
+		@font-face {
+			font-family: myFont;
+			src: url("font/FonxT-Regular.otf") format("opentype");
+		}
+
+		@font-face {
+			font-family: myFont;
+			font-weight: bold;
+			src: url("font/FonxT-Regular.otf") format("opentype");
+		}
 		h1{
-			font-family: Rage;
+			font-family: myFont;
 			color: #ab4242;
 			font-size: 60px;
 		}
@@ -41,7 +51,7 @@ $(document).ready(function(){
 			color: #af4949;
 		}
 		li a{  
-			font-family: Mistral;
+			font-family: myFont;
 			font-size: 25px;
 			color: black;
 			border-bottom-style: solid;
@@ -66,7 +76,7 @@ $(document).ready(function(){
 		}
 		.container p{
 			color: black;
-			font-family: monospace;
+			font-family: myFont;
 		}
 		a span{
 			color: black;
@@ -84,7 +94,7 @@ $(document).ready(function(){
 			border: 1px solid #a8a8a8;
 		}
 		h5{
-			font-family: rage;
+			font-family: myFont;
 			font-size: 30px;
 			color: #af4949;
 		}
@@ -150,22 +160,22 @@ $(document).ready(function(){
     			<div class="carousel-item active">
       				<img src="images/img1.jpg" alt="headerback" width="1100" height="500">
       				<div class="carousel-caption">
-        				<h2 style="color:white;font-family: Rage;font-size:60px;">Shop Here Now</h2>
+        				<h2 style="color:white;font-family: myFont;font-size:60px;">Shop Here Now</h2>
         				<p style="color:white;font-size:20px;">UPTO 50-75% DISCOUNT ON ALL PRODUCTS</p>
       				</div>
     			</div>
     			<div class="carousel-item">
       				<img src="images/b.jpg" alt="b" width="1100" height="500">
       				<div class="carousel-caption">
-        				<h2 style="color:white;font-family: Rage;font-size:60px;">This Is Just Demo</h2>
+        				<h2 style="color:white;font-family: myFont;font-size:60px;">This Is Just Demo</h2>
         				<p style="color:white;font-size:20px;">FLAT 10% DISCOUNT</p>
       				</div>
     			</div>
     			<div class="carousel-item">
       				<img src="images/img3.jpg" alt="head" width="1100" height="500">
       				<div class="carousel-caption">
-        				<h2 style="color:black;font-family: Rage;font-size:60px;">On All Accessories</h2>
-        				<p style="color:black;font-size:20px;">UPTO 20% DISCOUNT ON EVERY PRODUCT</p>
+        				<!-- <h2 style="color:black;font-family: myFont;font-size:60px;">On All Accessories</h2>
+        				<p style="color:black;font-size:20px;">UPTO 20% DISCOUNT ON EVERY PRODUCT</p> -->
       				</div>
     			</div>
   			</div>
